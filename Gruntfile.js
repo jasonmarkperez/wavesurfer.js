@@ -31,13 +31,15 @@ module.exports = function (grunt) {
             }
         },
         connect: {
-            options: {
-	        base: '.',
-	        port: 9000,
-	        // Change this to '0.0.0.0' to access the server from outside.
-	        hostname: 'localhost',
-	        keepalive: true
-	    }
+            server: {
+                options: {
+                    base: '.',
+                    port: 9000,
+                    // Change this to '0.0.0.0' to access the server from outside.
+                    hostname: 'localhost',
+                    keepalive: true
+               }
+           }
         },
         /* The build has three steps:
          - concatenation (wavesurfer.dev.js)
